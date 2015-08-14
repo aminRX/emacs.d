@@ -41,7 +41,7 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
-
+(add-to-list 'auto-mode-alist '("\\.ejs" . web-mode))
 (provide 'my-web-mode)
 
 ;;; my-web-mode.el ends here
