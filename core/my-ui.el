@@ -55,23 +55,24 @@
 
 
 ;; Theme and fonts
-(require 'powerline)
-(require 'moe-theme)
-
-(setq moe-theme-resize-markdown-title '(1.5 1.4 1.3 1.2 1.0 1.0))
-(setq moe-theme-resize-org-title '(1.5 1.4 1.3 1.2 1.1 1.0 1.0 1.0 1.0))
-(setq moe-theme-resize-rst-title '(1.5 1.4 1.3 1.2 1.1 1.0))
-(moe-theme-set-color 'magenta)
-
-(moe-dark)
-(powerline-moe-theme)
-
-(setq powerline-display-buffer-size nil)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
+ '(custom-enabled-themes (quote (monokai)))
+ '(custom-safe-themes
+   (quote
+    ("05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
 ;; Font
-(when window-system
-  (set-face-attribute 'default nil :font "Ubuntu Mono-14:antialias=true")
-  (toggle-frame-maximized))
 
 (provide 'my-ui)
 
