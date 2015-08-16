@@ -7,7 +7,7 @@
 (setq explicit-shell-file-name "/usr/local/bin/bash")
 
 ;; Turn cmd key into meta
-(setq mac-command-modifier 'meta)
+(setq mac-command-modifier 'control)
 
 (require 'exec-path-from-shell)
 (when (memq window-system '(mac ns))
