@@ -32,7 +32,7 @@
   (indent-buffer)
   (untabify-buffer)
   (delete-trailing-whitespace))
-
+(setq make-backup-files nil)
 (provide 'my-functions)
 
 ;;; my-functions.el ends here
