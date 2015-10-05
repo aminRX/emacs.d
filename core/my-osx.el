@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(setq explicit-shell-file-name "/usr/local/bin/bash")
+(setq explicit-shell-file-name "/bin/bash")
 
 ;; Turn cmd key into meta
 (setq mac-command-modifier 'control)
