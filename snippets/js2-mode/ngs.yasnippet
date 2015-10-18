@@ -2,6 +2,19 @@
 # name: ngs
 # key: ngs
 # --
-service("$1", function () {
-  $3
-});
+(function () {
+  'use strict';
+
+  angular
+    .module($1)
+    .factory('$2Service', $2Service);
+
+  $2Service.$inject = [];
+
+  function $2Service() {
+    this.$3 = function(msg) {
+      $0
+    };
+  }
+
+})();

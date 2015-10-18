@@ -2,6 +2,26 @@
 # name: ngc
 # key: ngc
 # --
-controller('$1', function ($scope, $2) {
-  $0
-});
+(function () {
+  'use strict';
+
+  angular
+    .module('$1')
+    .controller('$2Controller', $2Controller);
+
+  $2Controller.$inject = [];
+
+  function $2Controller() {
+    var vm = this;
+    vm.title = '$2Controller';
+
+    activate();
+
+    ////////////////
+
+    function activate() {
+    }
+    $0
+  }
+
+})();
