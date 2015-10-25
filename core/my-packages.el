@@ -25,6 +25,7 @@
                       exec-path-from-shell
                       expand-region
                       flycheck
+                      js2-refactor
                       ido-ubiquitous
                       iedit
                       move-text
