@@ -21,6 +21,7 @@
                       diminish
                       dired+
                       discover-my-major
+                      emmet-mode
                       epl
                       exec-path-from-shell
                       expand-region

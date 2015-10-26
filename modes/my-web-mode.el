@@ -9,7 +9,7 @@
 (require 'web-mode)
 (require 'rainbow-mode)
 (require 'coffee-mode)
-
+(require 'emmet-mode)
 ;; Rainbow mode
 (add-hook 'css-mode-hook (lambda () (rainbow-mode 1)))
 (add-hook 'html-mode-hook (lambda () (rainbow-mode 1)))
@@ -42,6 +42,11 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ejs" . web-mode))
+
+;; Emmet
+(add-hook 'web-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+
 (provide 'my-web-mode)
 
 ;;; my-web-mode.el ends here
