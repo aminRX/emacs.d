@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: uistate
+# key: uistate
+# --
+state('${1:name}', {
+  url: '${2:route}',
+  views: {
+    '$3': {
+      controller: '${4:controller}',
+      templateUrl: '${5:templateUrl}'
+    }
+  },
+  data: {
+  }
+});
