@@ -35,6 +35,7 @@
                       powerline
                       projectile
                       rainbow-delimiters
+                      restclient
                       smex
                       volatile-highlights
                       writegood-mode
