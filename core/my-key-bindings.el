@@ -71,7 +71,6 @@
   (next-line 1)
   (yank)
 )
-(global-set-key (kbd "C-d") 'duplicate-line)
 
 (my-key-bindings-minor-mode +1)
 
