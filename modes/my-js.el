@@ -17,10 +17,6 @@
                             (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)))
 (require 'js-comint)
 
-(require 'js2-refactor)
-(add-hook 'js2-mode-hook #'js2-refactor-mode)
-(js2r-add-keybindings-with-prefix "C-c C-m")
-
 (setq inferior-js-program-command "node --")
 
 (provide 'my-js)
