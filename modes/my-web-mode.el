@@ -19,7 +19,7 @@
 ;; Web mode
 (setq web-mode-markup-indent-offset 2)
 (setq web-mode-css-indent-offset 2)
-(setq web-mode-code-indent-offset 4)
+(setq web-mode-code-indent-offset 2)
 
 (defadvice web-mode-highlight-part (around tweak-jsx activate)
   "JSX."
@@ -42,10 +42,24 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ejs" . web-mode))
 
+;; use web-mode for .jsx files
+(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
+
+;; http://www.flycheck.org/manual/latest/index.html
+(require 'flycheck)
+;; turn on flychecking globally
+(add-hook 'after-init-hook #'global-flycheck-mode)
+;; disable json-jsonlist checking for json files
+(setq-default flycheck-disabled-checkers (append flycheck-disabled-checkers '(json-jsonlist)))
+;; disable jshint since we prefer eslint checking
+(setq-default flycheck-disabled-checkers (append flycheck-disabled-checkers '(javascript-jshint)))
+;; use eslint with web-mode for jsx files
+(flycheck-add-mode 'javascript-eslint 'web-mode)
+
 ;; Emmet
 (add-hook 'web-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 
 (provide 'my-web-mode)
 
-;;; my-web-mode.el ends here
+;; my-web-mode.el ends here

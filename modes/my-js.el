@@ -10,7 +10,7 @@
 (autoload 'js2-mode "js" nil t)
 (push '("\\.js$" . js2-mode) auto-mode-alist)
 (push '("\\.json$" . js2-mode) auto-mode-alist)
-(push '("\\.jsx$" . js2-jsx-mode) auto-mode-alist)
+
 
 (setq-default js2-basic-offset 2)
 (add-hook 'js2-mode-hook '(lambda ()
@@ -20,7 +20,6 @@
 (require 'js-comint)
 
 (setq inferior-js-program-command "node --")
-
 (provide 'my-js)
 
 ;;; my-js.el ends here
