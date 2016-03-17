@@ -8,7 +8,7 @@
 
 (require 'js2-mode)
 (autoload 'js2-mode "js" nil t)
-(push '("\\.js$" . js2-mode) auto-mode-alist)
+;;(push '("\\.js$" . js2-mode) auto-mode-alist)
 (push '("\\.json$" . js2-mode) auto-mode-alist)
 
 
