@@ -4,23 +4,13 @@
 
 ;;; Code:
 
-(setq explicit-shell-file-name "/bin/bash")
+(require-packages '(exec-path-from-shell))
 
 ;; Turn cmd key into meta
 (setq mac-command-modifier 'control)
 
 (require 'exec-path-from-shell)
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
-
-(add-hook 'inferior-js-mode-hook
-          (lambda ()
-            ;; We like nice colors
-            (ansi-color-for-comint-mode-on)
-            ;; Deal with some prompt nonsense
-            (push (lambda (output)
-                    (replace-regexp-in-string "\033\\[[0-9]+[GKJ]" "" output))
-                  comint-preoutput-filter-functions)))
+(exec-path-from-shell-initialize)
 
 (provide 'my-osx)
 
