@@ -235,6 +235,12 @@
 ;; keep in mind known issues with zsh - see emacs wiki
 (setq tramp-default-method "ssh")
 
+(require 'company)
+
+(add-hook 'after-init-hook 'global-company-mode)
+
+(add-hook 'company-mode-hook  (lambda () (diminish 'company-mode)))
+
 ;; Magit configuration
 
 (provide 'my-editor)

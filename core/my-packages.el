@@ -16,6 +16,8 @@
                       ag
                       ample-theme
                       anzu
+                      company-tern
+                      company
                       browse-kill-ring
                       dash-at-point
                       diff-hl
@@ -37,6 +39,7 @@
                       projectile
                       rainbow-delimiters
                       restclient
+                      tern
                       smex
                       volatile-highlights
                       writegood-mode

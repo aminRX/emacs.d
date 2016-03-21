@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require-packages '(js2-mode js-comint))
+(require-packages '(js2-mode tern company-tern))
 
 (require 'js2-mode)
 (autoload 'js2-mode "js" nil t)
@@ -13,11 +13,19 @@
 (push '("\\.jsx$" . js2-jsx-mode) auto-mode-alist)
 
 (setq-default js2-basic-offset 2)
-(add-hook 'js2-mode-hook '(lambda ()
-                            (local-set-key "\C-x\C-e" 'js-send-last-sexp)
-                            (local-set-key "\C-cb" 'js-send-buffer)
-                            (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)))
-(require 'js-comint)
+
+(defun setup-tern ()
+  (js2-imenu-extras-mode +1)
+  (tern-mode t))
+
+(defun setup-company ()
+  (unless (member 'company-tern 'company-backends)
+    (add-to-list 'company-backends 'company-tern)))
+
+(add-hook 'js2-mode-hook 'setup-tern)
+(add-hook 'js2-mode-hook 'setup-company)
+(add-hook 'js2-jsx-mode-hook 'setup-tern)
+(add-hook 'js2-jsx-mode-hook 'setup-company)
 
 (provide 'my-js)
 
