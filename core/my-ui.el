@@ -54,8 +54,8 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; Theme
-(require 'monokai-theme)
-(load-theme 'monokai t)
+(require 'ample-theme)
+(load-theme 'ample t t)
 
 ;; Font
 (when window-system

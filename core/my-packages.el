@@ -14,6 +14,7 @@
                       ace-jump-mode
                       ace-window
                       ag
+                      ample-theme
                       anzu
                       browse-kill-ring
                       dash-at-point
