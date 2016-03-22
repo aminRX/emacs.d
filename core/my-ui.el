@@ -56,6 +56,7 @@
 ;; Theme
 (require 'ample-theme)
 (load-theme 'ample t t)
+(set-face-attribute 'region nil :background "#666")
 
 ;; Font
 (when window-system
