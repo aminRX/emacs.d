@@ -40,6 +40,7 @@
                       rainbow-delimiters
                       restclient
                       tern
+                      smartparens
                       smex
                       volatile-highlights
                       writegood-mode

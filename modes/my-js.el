@@ -27,6 +27,10 @@
 (add-hook 'js2-jsx-mode-hook 'setup-tern)
 (add-hook 'js2-jsx-mode-hook 'setup-company)
 
+(require 'smartparens-config)
+(sp-local-pair 'js2-mode "'" nil :unless '(sp-point-before-same-p))
+(add-hook 'js2-mode-hook #'smartparens-mode)
+
 (provide 'my-js)
 
 ;;; my-js.el ends here
