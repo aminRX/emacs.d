@@ -40,6 +40,8 @@
                       rainbow-delimiters
                       restclient
                       tern
+                      tss
+                      sass-mode
                       smartparens
                       smex
                       volatile-highlights
