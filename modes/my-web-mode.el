@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require-packages '(web-mode sass-mode rainbow-mode react-snippets coffee-mode sass-mode))
+(require-packages '(web-mode sass-mode rainbow-mode react-snippets coffee-mode scss-mode))
 
 (require 'web-mode)
 (require 'rainbow-mode)
@@ -13,7 +13,7 @@
 ;; Rainbow mode
 (add-hook 'css-mode-hook (lambda () (rainbow-mode 1)))
 (add-hook 'html-mode-hook (lambda () (rainbow-mode 1)))
-(add-hook 'sass-mode-hook (lambda () (rainbow-mode 1)))
+(add-hook 'scss-mode-hook (lambda () (rainbow-mode 1)))
 (diminish 'rainbow-mode)
 
 ;; Web mode
@@ -41,10 +41,13 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ejs" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.scss" . sass-mode))
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
 ;; Emmet
 (add-hook 'web-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+
+(add-hook 'scss-mode-hook 'nlinum-mode)
 
 (provide 'my-web-mode)
 

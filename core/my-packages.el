@@ -41,7 +41,7 @@
                       restclient
                       tern
                       tss
-                      sass-mode
+                      scss-mode
                       smartparens
                       smex
                       volatile-highlights
