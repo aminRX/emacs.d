@@ -59,6 +59,7 @@
 (require 'my-text)
 (require 'my-web-mode)
 (require 'my-modes)
+(require 'my-helm)
 
 ;; Load UI after everything else.
 (require 'my-ui)

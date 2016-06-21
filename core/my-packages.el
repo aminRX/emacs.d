@@ -35,6 +35,7 @@
                       move-text
                       nlinum
                       org
+                      helm
                       powerline
                       projectile
                       rainbow-delimiters
@@ -47,7 +48,7 @@
                       volatile-highlights
                       writegood-mode
                       yasnippet
-
+                      spacemacs-theme
                       ;;; Themes
                       color-theme-sanityinc-tomorrow
                       leuven-theme

@@ -19,12 +19,12 @@
     (define-key map (kbd "M-o") 'ace-window)
     (define-key map (kbd "M-k") 'kill-this-buffer)
     (define-key map (kbd "C-x C-m") 'smex)
-    (define-key map (kbd "M-x") 'smex-major-mode-commands)
-    (define-key map (kbd "C-c C-p C-d") 'dash-at-point)
+;;    (define-key map (kbd "M-x") 'smex-major-mode-commands)
+;;    (define-key map (kbd "C-c C-p C-d") 'dash-at-point)
     (define-key map (kbd "C-z") 'repeat)
     (define-key map (kbd "C-x C-r") 'recentf-open-files)
     (define-key map (kbd "C-<return>") 'isearch-forward-symbol-at-point)
-    (define-key map (kbd "C-x C-b") 'ibuffer)
+;;    (define-key map (kbd "C-x C-b") 'ibuffer)
     (define-key map (kbd "C-=") 'er/expand-region)
     (define-key map (kbd "C-c j") 'ace-jump-mode)
     (define-key map (kbd "s-y") 'browse-kill-ring)
@@ -33,6 +33,13 @@
     (define-key map (kbd "C-|") 'hippie-expand)
     (define-key map (kbd "C-;") 'iedit-mode)
     map))
+(defun start-other-emacs ()
+  "Start another Emacs process to open an independent Emacs window."
+  (interactive)
+  ;;; Run the command "emacs", piping output into a
+  ;;; buffer called "*other-emacs*"
+  (start-process "emacs" "*other-emacs*" "emacs"))
+(global-set-key (kbd "C-x 5 2") 'start-other-emacs)
 
 (define-minor-mode my-key-bindings-minor-mode
   "A minor mode that sets my own key bindings globally." t " My" my-bindings-map)
