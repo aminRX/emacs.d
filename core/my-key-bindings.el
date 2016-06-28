@@ -33,13 +33,6 @@
     (define-key map (kbd "C-|") 'hippie-expand)
     (define-key map (kbd "C-;") 'iedit-mode)
     map))
-(defun start-other-emacs ()
-  "Start another Emacs process to open an independent Emacs window."
-  (interactive)
-  ;;; Run the command "emacs", piping output into a
-  ;;; buffer called "*other-emacs*"
-  (start-process "emacs" "*other-emacs*" "emacs"))
-(global-set-key (kbd "C-x 5 2") 'start-other-emacs)
 
 (define-minor-mode my-key-bindings-minor-mode
   "A minor mode that sets my own key bindings globally." t " My" my-bindings-map)
@@ -53,31 +46,9 @@
 (global-unset-key (kbd "C-x o"))
 (global-unset-key (kbd "C-x o"))
 (global-unset-key (kbd "C-x k"))
-(global-unset-key (kbd "<left>"))
-(global-unset-key (kbd "<right>"))
-(global-unset-key (kbd "<up>"))
-(global-unset-key (kbd "<down>"))
-(global-unset-key (kbd "<C-left>"))
-(global-unset-key (kbd "<C-right>"))
-(global-unset-key (kbd "<C-up>"))
-(global-unset-key (kbd "<C-down>"))
-(global-unset-key (kbd "<M-left>"))
-(global-unset-key (kbd "<M-right>"))
-(global-unset-key (kbd "<M-up>"))
-(global-unset-key (kbd "<M-down>"))
 
 ;; Custom set keys
 (global-set-key [M-delete] 'kill-word)
-
-(defun duplicate-line()
-  (interactive)
-  (move-beginning-of-line 1)
-  (kill-line)
-  (yank)
-  (open-line 1)
-  (next-line 1)
-  (yank)
-)
 
 (my-key-bindings-minor-mode +1)
 

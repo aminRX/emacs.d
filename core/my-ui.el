@@ -54,10 +54,11 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; Theme
-(require 'ample-theme)
-(load-theme 'ample t t)
-(set-face-attribute 'region nil :background "#666")
-
+;;(require 'ample-theme)
+;;(load-theme 'ample t t)
+;;(set-face-attribute 'region nil :background "#666")
+(require 'zenburn-theme)
+(load-theme 'zenburn t)
 ;; Font
 (when window-system
   (set-face-attribute 'default nil :font "Hack-12")
