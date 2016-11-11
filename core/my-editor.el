@@ -48,6 +48,7 @@
 
 ;; whitespace removal
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;; Don't inmediately display warnings that aren't emergencies.
 (setq-default warning-minimum-level :emergency)
@@ -148,6 +149,26 @@
 
 ;; autofill
 (setq-default fill-column 80)
+
+(require 'rainbow-delimiters)
+(require 'flycheck)
+(require 'smartparens-config)
+
+(setq sp-base-key-bindings 'paredit)
+(setq sp-autoskip-closing-pair 'always)
+(setq sp-hybrid-kill-entire-symbol nil)
+(sp-use-paredit-bindings)
+(show-smartparens-global-mode +1)
+
+(diminish 'flycheck-mode)
+(diminish 'smartparens-mode)
+
+(add-hook 'prog-mode-hook (lambda ()
+                            (rainbow-delimiters-mode +1)
+                            (flycheck-mode +1)
+                            (linum-mode +1)
+                            (toggle-truncate-lines +1)
+                            (smartparens-mode +1)))
 
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
