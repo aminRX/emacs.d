@@ -163,13 +163,6 @@
 (diminish 'flycheck-mode)
 (diminish 'smartparens-mode)
 
-(add-hook 'prog-mode-hook (lambda ()
-                            (rainbow-delimiters-mode +1)
-                            (flycheck-mode +1)
-                            (linum-mode +1)
-                            (toggle-truncate-lines +1)
-                            (smartparens-mode +1)))
-
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
