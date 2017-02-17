@@ -237,6 +237,12 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 (add-hook 'company-mode-hook  (lambda () (diminish 'company-mode)))
+(add-hook 'prog-mode-hook (lambda ()
+                            (rainbow-delimiters-mode +1)
+                            (flycheck-mode +1)
+                            (linum-mode +1)
+                            (toggle-truncate-lines +1)
+                            (smartparens-mode +1)))
 
 ;; Magit configuration
 
