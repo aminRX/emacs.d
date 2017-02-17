@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require-packages '(rbenv ruby-tools projectile-rails))
+(require-packages '(rbenv ruby-tools projectile-rails inf-ruby yari))
 
 ;; Ruby
 (require 'ruby-mode)
@@ -15,6 +15,8 @@
 (push '("\\.rake" . ruby-mode) auto-mode-alist)
 (push '("\\.gemspec" . ruby-mode) auto-mode-alist)
 (setq ruby-insert-encoding-magic-comment nil)
+(projectile-rails-global-mode)
+(define-key 'help-command (kbd "R") 'yari)
 
 ;; Ruby Version Manager
 (require 'rbenv)
