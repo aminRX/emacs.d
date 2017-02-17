@@ -7,7 +7,7 @@
 ;; tabs and indentation
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
-
+(setq require-final-newline t)
 ;;
 (setq initial-scratch-message nil)
 (setq initial-major-mode 'org-mode)
