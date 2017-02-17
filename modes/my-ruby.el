@@ -29,6 +29,11 @@
 ;; Ruby projects
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 
+(add-hook 'ruby-mode-hook (lambda ()
+                            (inf-ruby-minor-mode +1)
+                            (ruby-tools-mode +1)
+                            ;; CamelCase aware editing operations
+                            (subword-mode +1)))
 
 (provide 'my-ruby)
 
