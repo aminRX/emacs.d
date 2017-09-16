@@ -14,6 +14,8 @@
 
 (setq magit-last-seen-setup-instructions "1.4.0")
 
+(setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)
+
 (provide 'my-magit)
 
 ;;; my-magit.el ends here
