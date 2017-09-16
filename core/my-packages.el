@@ -49,6 +49,7 @@
                       writegood-mode
                       yasnippet
                       spacemacs-theme
+                      spaceline
                       typescript-mode
                       ;;; Themes
                       color-theme-sanityinc-tomorrow
