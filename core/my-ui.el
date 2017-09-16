@@ -57,12 +57,18 @@
 ;;(require 'ample-theme)
 ;;(load-theme 'ample t t)
 ;;(set-face-attribute 'region nil :background "#666")
-(require 'zenburn-theme)
-(load-theme 'zenburn t)
+(require 'noctilux-theme)
+(load-theme 'noctilux t)
 ;; Font
 (when window-system
   (set-face-attribute 'default nil :font "Source Code Pro 13")
   (toggle-frame-maximized))
+
+;; spaceline-config
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
+(setq ns-use-srgb-colorspace nil)
+(setq powerline-default-separator 'utf-8)
 
 (provide 'my-ui)
 

@@ -56,7 +56,8 @@
                       moe-theme
                       monokai-theme
                       solarized-theme
-                      zenburn-theme)
+                      zenburn-theme
+                      noctilux-theme)
   "A list of required packages to ensure they are installed at launch.")
 
 (defun require-package (package)
