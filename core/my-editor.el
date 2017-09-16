@@ -244,6 +244,8 @@
                             (toggle-truncate-lines +1)
                             (smartparens-mode +1)))
 
+(setq company-dabbrev-downcase nil)
+
 ;; Magit configuration
 
 (provide 'my-editor)
