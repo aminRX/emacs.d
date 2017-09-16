@@ -12,6 +12,7 @@
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
 
 (setq-default js2-basic-offset 2)
+(setq js-switch-indent-offset 2)
 
 (defun setup-js2 ()
   ;; electric-layout-mode doesn't play nice with smartparens
