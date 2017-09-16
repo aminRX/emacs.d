@@ -61,7 +61,7 @@
 (load-theme 'noctilux t)
 ;; Font
 (when window-system
-  (set-face-attribute 'default nil :font "Source Code Pro 13")
+  (set-face-attribute 'default nil :font "Source Code Pro-14")
   (toggle-frame-fullscreen))
 
 ;; spaceline-config
