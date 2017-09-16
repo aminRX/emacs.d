@@ -62,7 +62,7 @@
 ;; Font
 (when window-system
   (set-face-attribute 'default nil :font "Source Code Pro 13")
-  (toggle-frame-maximized))
+  (toggle-frame-fullscreen))
 
 ;; spaceline-config
 (require 'spaceline-config)
