@@ -61,7 +61,7 @@
 (load-theme 'zenburn t)
 ;; Font
 (when window-system
-  (set-face-attribute 'default nil :font "Hack-12")
+  (set-face-attribute 'default nil :font "Source Code Pro 13")
   (toggle-frame-maximized))
 
 (provide 'my-ui)
