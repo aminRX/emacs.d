@@ -66,9 +66,9 @@
 
 ;; spaceline-config
 (require 'spaceline-config)
-(spaceline-spacemacs-theme)
+(spaceline-emacs-theme)
+(spaceline-helm-mode)
 (setq ns-use-srgb-colorspace nil)
-(setq powerline-default-separator 'utf-8)
 
 (provide 'my-ui)
 
