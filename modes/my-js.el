@@ -12,6 +12,7 @@
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
 
 (setq-default js2-basic-offset 2)
+(setq-default js2-global-externs '("module" "require" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "process"))
 (setq js-switch-indent-offset 2)
 (setq-default js2-strict-trailing-comma-warning nil)
 
