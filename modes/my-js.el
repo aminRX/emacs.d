@@ -13,6 +13,7 @@
 
 (setq-default js2-basic-offset 2)
 (setq js-switch-indent-offset 2)
+(setq-default js2-strict-trailing-comma-warning nil)
 
 (defun setup-js2 ()
   ;; electric-layout-mode doesn't play nice with smartparens
