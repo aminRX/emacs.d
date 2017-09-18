@@ -51,6 +51,8 @@
                       spacemacs-theme
                       spaceline
                       typescript-mode
+                      evil
+                      evil-escape
                       ;;; Themes
                       color-theme-sanityinc-tomorrow
                       leuven-theme
