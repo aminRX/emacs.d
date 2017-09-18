@@ -69,6 +69,7 @@
 (spaceline-emacs-theme)
 (spaceline-helm-mode)
 (setq ns-use-srgb-colorspace nil)
+(setq spaceline-highlight-face-func 'spaceline-highlight-face-evil-state)
 
 (provide 'my-ui)
 
