@@ -52,7 +52,7 @@
                       spaceline
                       typescript-mode
                       evil
-                      evil-escape
+                      key-chord
                       ;;; Themes
                       color-theme-sanityinc-tomorrow
                       leuven-theme

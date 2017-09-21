@@ -38,11 +38,10 @@
 (define-key evil-insert-state-map "\C-k" 'kill-line)
 (define-key evil-visual-state-map "\C-k" 'kill-line)
 
-(require 'evil-escape)
-(evil-escape-mode 1)
-
-(setq-default evil-escape-key-sequence "jk")
-(setq-default evil-escape-delay 0.2)
+(require 'key-chord)
+(key-chord-mode 1)
+(key-chord-define evil-insert-state-map  "kj" 'evil-normal-state)
+(setq key-chord-one-key-delay 0.2) ; default 0.2
 
 (provide 'my-evil)
 
