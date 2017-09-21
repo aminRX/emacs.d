@@ -33,6 +33,7 @@
                       ido-ubiquitous
                       iedit
                       move-text
+                      linum-relative
                       org
                       helm
                       powerline

@@ -177,8 +177,8 @@
 ;; use eslint with web-mode for jsx files
 (flycheck-add-mode 'javascript-eslint 'js2-mode)
 
-(require 'linum)
-(add-hook 'prog-mode-hook 'linum-mode)
+(require 'linum-relative)
+(add-hook 'prog-mode-hook 'linum-relative-mode)
 
 ;; Nice window navigation
 (require 'windmove)
@@ -240,7 +240,7 @@
 (add-hook 'prog-mode-hook (lambda ()
                             (rainbow-delimiters-mode +1)
                             (flycheck-mode +1)
-                            (linum-mode +1)
+                            (linum-relative-mode +1)
                             (toggle-truncate-lines +1)
                             (smartparens-mode +1)))
 
