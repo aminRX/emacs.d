@@ -4,10 +4,10 @@
 
 ;;; Code:
 
-(require-packages '(flx-ido ido-ubiquitous smex ido-vertical-mode))
+(require-packages '(flx-ido ido-completing-read+ smex ido-vertical-mode))
 
 (require 'ido)
-(require 'ido-ubiquitous)
+(require 'ido-completing-read+)
 (require 'flx-ido)
 (require 'ido-vertical-mode)
 (require 'smex)

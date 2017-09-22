@@ -31,7 +31,7 @@
                       expand-region
                       flycheck
                       js2-refactor
-                      ido-ubiquitous
+                      ido-completing-read+
                       iedit
                       move-text
                       linum-relative
