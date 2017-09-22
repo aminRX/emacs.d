@@ -32,6 +32,10 @@
     (define-key map (kbd "C-c m") 'discover-my-major)
     (define-key map (kbd "C-|") 'hippie-expand)
     (define-key map (kbd "C-;") 'iedit-mode)
+    ;; avy
+    (global-set-key (kbd "C-:") 'avy-goto-char)
+    (global-set-key (kbd "M-g f") 'avy-goto-line)
+    (global-set-key (kbd "M-g w") 'avy-goto-word-1)
     map))
 
 (define-minor-mode my-key-bindings-minor-mode
