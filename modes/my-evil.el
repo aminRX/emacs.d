@@ -72,7 +72,8 @@
 ;; buffer manipulation
 (evil-leader/set-key
   "bb" 'helm-mini
-  "bB" 'helm-buffers-list)
+  "bB" 'helm-buffers-list
+  "bd" 'kill-this-buffer)
 
 (evil-leader/set-key
   "pf" 'helm-projectile)
