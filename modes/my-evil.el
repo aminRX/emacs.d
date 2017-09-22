@@ -43,6 +43,10 @@
 (key-chord-define evil-insert-state-map  "kj" 'evil-normal-state)
 (setq key-chord-one-key-delay 0.2) ; default 0.2
 
+;; Evil machit
+(require 'evil-matchit)
+(global-evil-matchit-mode 1)
+
 ;; Evil leader
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")

@@ -54,6 +54,7 @@
                       typescript-mode
                       evil
                       evil-leader
+                      evil-matchit
                       key-chord
                       ;;; Themes
                       color-theme-sanityinc-tomorrow
