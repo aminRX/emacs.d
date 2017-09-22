@@ -57,6 +57,10 @@
   "jl" 'avy-goto-line
   "jw" 'avy-goto-word-1)
 
+;; Files manipulations
+(evil-leader/set-key
+  "ff" 'helm-find-files)
+
 (provide 'my-evil)
 
 ;;; my-evil.el ends here
