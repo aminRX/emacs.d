@@ -21,7 +21,7 @@
     (define-key map (kbd "C-x C-m") 'smex)
 ;;    (define-key map (kbd "M-x") 'smex-major-mode-commands)
 ;;    (define-key map (kbd "C-c C-p C-d") 'dash-at-point)
-    (define-key map (kbd "C-z") 'repeat)
+;;    (define-key map (kbd "C-z") 'repeat)
     (define-key map (kbd "C-x C-r") 'recentf-open-files)
     (define-key map (kbd "C-<return>") 'isearch-forward-symbol-at-point)
 ;;    (define-key map (kbd "C-x C-b") 'ibuffer)
