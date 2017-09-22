@@ -59,12 +59,22 @@
 
 ;; Files manipulations
 (evil-leader/set-key
-  "ff" 'helm-find-files)
+  "ff" 'helm-find-files
+  "fj" 'dired-jump
+  "fs" 'save-buffer
+  "fS" 'save-some-buffers)
 
 ;; buffer manipulation
 (evil-leader/set-key
   "bb" 'helm-mini
   "bB" 'helm-buffers-list)
+
+(evil-leader/set-key
+  "pf" 'helm-projectile)
+
+;; git manipulation
+(evil-leader/set-key
+  "gs" 'magit-status)
 
 (provide 'my-evil)
 
