@@ -43,6 +43,16 @@
 (key-chord-define evil-insert-state-map  "kj" 'evil-normal-state)
 (setq key-chord-one-key-delay 0.2) ; default 0.2
 
+;; Evil leader
+(global-evil-leader-mode)
+(evil-leader/set-leader "<SPC>")
+
+;; avy
+(evil-leader/set-key
+  "jj" 'avy-goto-char
+  "jl" 'avy-goto-line
+  "jw" 'avy-goto-word-1)
+
 (provide 'my-evil)
 
 ;;; my-evil.el ends here

@@ -13,6 +13,7 @@
 (defvar my-packages '(ace-jump-buffer
                       ace-jump-mode
                       ace-window
+                      avy
                       ag
                       ample-theme
                       anzu
@@ -52,6 +53,7 @@
                       spaceline
                       typescript-mode
                       evil
+                      evil-leader
                       key-chord
                       ;;; Themes
                       color-theme-sanityinc-tomorrow
