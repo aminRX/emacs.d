@@ -56,7 +56,7 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 
-;; avy
+;; Navigation
 (evil-leader/set-key
   "jj" 'avy-goto-char
   "jl" 'avy-goto-line
