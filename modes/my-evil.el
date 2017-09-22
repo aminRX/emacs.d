@@ -81,6 +81,10 @@
 (evil-leader/set-key
   "gs" 'magit-status)
 
+;; quit emacs.
+(evil-leader/set-key
+  "qq" 'confirm-exit-emacs)
+
 (provide 'my-evil)
 
 ;;; my-evil.el ends here
