@@ -61,6 +61,11 @@
 (evil-leader/set-key
   "ff" 'helm-find-files)
 
+;; buffer manipulation
+(evil-leader/set-key
+  "bb" 'helm-mini
+  "bB" 'helm-buffers-list)
+
 (provide 'my-evil)
 
 ;;; my-evil.el ends here
