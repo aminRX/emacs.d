@@ -20,7 +20,7 @@ $ emacs --insecure
 
 Run in emacs:
 
-    git clone git@github.com:aminRX/emacs.d.git
+    M-x all-the-icons-install-fonts
 
 ## Source Code Pro
 
