@@ -9,3 +9,4 @@ savefile/savehist
 savefile/saveplace
 savefile/ido.hist
 backup/*
+ac-comphist.dat
