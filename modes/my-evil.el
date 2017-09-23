@@ -90,7 +90,7 @@
 
 (evil-leader/set-key
   "pf" 'helm-projectile
-  "pt" 'neotree-toggle)
+  "pt" 'neotree-projectile-action)
 
 ;; git manipulation
 (evil-leader/set-key
