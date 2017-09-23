@@ -55,6 +55,8 @@
                       evil
                       evil-leader
                       evil-matchit
+                      neotree
+                      all-the-icons
                       key-chord
                       ;;; Themes
                       color-theme-sanityinc-tomorrow

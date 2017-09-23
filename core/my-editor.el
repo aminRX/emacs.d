@@ -246,6 +246,8 @@
 
 (setq company-dabbrev-downcase nil)
 
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
 ;; Magit configuration
 
 (provide 'my-editor)
