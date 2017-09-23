@@ -73,7 +73,8 @@
   "ff" 'helm-find-files
   "fj" 'dired-jump
   "fs" 'save-buffer
-  "fS" 'save-some-buffers)
+  "fS" 'save-some-buffers
+  "ft" 'neotree-toggle)
 
 ;; buffer manipulation
 (evil-leader/set-key
@@ -82,7 +83,8 @@
   "bd" 'kill-this-buffer)
 
 (evil-leader/set-key
-  "pf" 'helm-projectile)
+  "pf" 'helm-projectile
+  "pt" 'neotree-toggle)
 
 ;; git manipulation
 (evil-leader/set-key

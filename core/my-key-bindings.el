@@ -10,6 +10,8 @@
     (define-key map (kbd "<f1>") 'shell)
     (define-key map (kbd "<f2>") 'ag)
     (define-key map (kbd "<f7>") 'toggle-truncate-lines)
+    (define-key map (kbd "<f8>") 'neotree-toggle)
+    (define-key map (kbd "<f9>") 'neotree-project-root-dir-or-current-dir)
     (define-key map (kbd "<f10>") 'magit-status)
     (define-key map (kbd "<f11>") 'toggle-frame-fullscreen)
     (define-key map (kbd "M-1") 'delete-other-windows)
