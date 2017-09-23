@@ -71,6 +71,10 @@
 (setq ns-use-srgb-colorspace nil)
 (setq spaceline-highlight-face-func 'spaceline-highlight-face-evil-state)
 
+;; window frame cannot be maximized 100% (mac)
+;; https://github.com/syl20bnr/spacemacs/issues/5633
+(setq frame-resize-pixelwise t)
+
 (provide 'my-ui)
 
 ;;; my-ui.el ends here
