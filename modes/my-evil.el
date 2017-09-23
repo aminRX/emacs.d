@@ -48,6 +48,12 @@
 ;; Should normally be a little longer than `key-chord-two-keys-delay'.
 (setq key-chord-one-key-delay 0.2) ; default 0.2
 
+;; neotree key bindings
+(evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
+(evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-quick-look)
+(evil-define-key 'normal neotree-mode-map (kbd "q") 'neotree-hide)
+(evil-define-key 'normal neotree-mode-map (kbd "RET") 'neotree-enter)
+
 ;; Evil machit
 (require 'evil-matchit)
 (global-evil-matchit-mode 1)
