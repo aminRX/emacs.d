@@ -247,7 +247,7 @@
 (setq company-dabbrev-downcase nil)
 
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
-(setq neo-hidden-regexp-list '("\\node_modules$" "^\\." "\\.cs\\.meta$" "\\.pyc$" "~$" "^#.*#$" "\\.elc$"))
+(setq neo-hidden-regexp-list '("\\node_modules$" "\\package-lock.json$" "^\\." "\\.cs\\.meta$" "\\.pyc$" "~$" "^#.*#$" "\\.elc$"))
 
 (require 'which-key)
 (which-key-mode)
