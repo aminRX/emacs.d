@@ -10,6 +10,18 @@
   (if (y-or-n-p "Are you sure you want to exit? ")
       (save-buffers-kill-emacs)))
 
+(defun confirm-erase-buffer ()
+  "Ask for confirmation before erase the current buffer."
+  (interactive)
+  (if (y-or-n-p "Are you sure you want to erase the current buffer? ")
+      (erase-buffer)))
+
+(defun kill-other-buffers ()
+  "Kill all other buffers."
+  (interactive)
+  (if (y-or-n-p "Are you sure you want to erase the current buffer? ")
+      (mapc 'kill-buffer (delq (current-buffer) (buffer-list)))))
+
 (defun my-upgrade-all ()
   "Upgrades all packages."
   (interactive)

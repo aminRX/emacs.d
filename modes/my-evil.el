@@ -80,7 +80,13 @@
 (evil-leader/set-key
   "bb" 'helm-mini
   "bB" 'helm-buffers-list
-  "bd" 'kill-this-buffer)
+  "bd" 'kill-this-buffer
+  "bd" 'kill-buffer
+  "be" 'confirm-erase-buffer
+  "bn" 'next-buffer
+  "bp" 'previous-buffer
+  "bm" 'kill-other-buffers
+  "br" 'revert-buffer)
 
 (evil-leader/set-key
   "pf" 'helm-projectile
