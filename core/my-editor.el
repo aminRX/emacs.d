@@ -247,6 +247,7 @@
 (setq company-dabbrev-downcase nil)
 
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+(setq neo-hidden-regexp-list '("\\node_modules$" "^\\." "\\.cs\\.meta$" "\\.pyc$" "~$" "^#.*#$" "\\.elc$"))
 
 ;; Magit configuration
 
