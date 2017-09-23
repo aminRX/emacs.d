@@ -94,6 +94,11 @@
   "hm" 'discover-my-major)
 
 (evil-leader/set-key
+  "ss" 'helm-swoop
+  "sS" 'helm-multi-swoop
+  "s C-s" 'helm-multi-swoop-all)
+
+(evil-leader/set-key
   "'" 'shell)
 
 ;; Visual Expand-region

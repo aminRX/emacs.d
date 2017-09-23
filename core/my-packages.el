@@ -37,6 +37,7 @@
                       linum-relative
                       org
                       helm
+                      helm-swoop
                       powerline
                       projectile
                       rainbow-delimiters
