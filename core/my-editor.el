@@ -259,7 +259,8 @@
   "SPC b" "buffer"
   "SPC p" "projectile"
   "SPC g" "git"
-  "SPC q" "quit")
+  "SPC q" "quit"
+  "SPC h" "help")
 
 ;; Magit configuration
 

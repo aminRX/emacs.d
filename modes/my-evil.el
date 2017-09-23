@@ -90,6 +90,9 @@
 (evil-leader/set-key
   "gs" 'magit-status)
 
+(evil-leader/set-key
+  "hm" 'discover-my-major)
+
 ;; Visual Expand-region
 (eval-after-load "evil" '(setq expand-region-contract-fast-key "V"))
 (evil-leader/set-key "v" 'er/expand-region)
