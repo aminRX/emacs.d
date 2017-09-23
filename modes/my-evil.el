@@ -90,6 +90,10 @@
 (evil-leader/set-key
   "gs" 'magit-status)
 
+;; Visual Expand-region
+(eval-after-load "evil" '(setq expand-region-contract-fast-key "V"))
+(evil-leader/set-key "v" 'er/expand-region)
+
 ;; quit emacs.
 (evil-leader/set-key
   "qq" 'confirm-exit-emacs)
