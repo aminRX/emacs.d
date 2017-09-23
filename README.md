@@ -6,9 +6,9 @@ My very own emacs.d configuration with everything I like.
 
 ## Setup
 
-To grab all the dependencies:
+Quick Install:
 
-    git clone git@github.com:aminRX/emacs.d.git
+    git clone https://github.com/aminRX/emacs.d ~/.emacs.d
 
 ## Install all-the-icons
 
