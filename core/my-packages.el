@@ -58,6 +58,7 @@
                       neotree
                       all-the-icons
                       key-chord
+                      which-key
                       ;;; Themes
                       color-theme-sanityinc-tomorrow
                       leuven-theme

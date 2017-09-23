@@ -249,6 +249,18 @@
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 (setq neo-hidden-regexp-list '("\\node_modules$" "^\\." "\\.cs\\.meta$" "\\.pyc$" "~$" "^#.*#$" "\\.elc$"))
 
+(require 'which-key)
+(which-key-mode)
+(which-key-setup-side-window-bottom)
+(setq which-key-idle-delay 0.1)
+(which-key-add-key-based-replacements
+  "SPC j" "jump"
+  "SPC f" "files"
+  "SPC b" "buffer"
+  "SPC p" "projectile"
+  "SPC g" "git"
+  "SPC q" "quit")
+
 ;; Magit configuration
 
 (provide 'my-editor)
