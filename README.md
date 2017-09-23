@@ -25,3 +25,9 @@ Run in emacs:
 ## Source Code Pro
 
     https://github.com/adobe-fonts/source-code-pro
+
+## References
+```
+https://github.com/ebobby/emacs.d
+https://github.com/syl20bnr/spacemacs
+```
