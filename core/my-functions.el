@@ -33,6 +33,26 @@
   (untabify-buffer)
   (delete-trailing-whitespace))
 (setq make-backup-files nil)
+
+;; https://github.com/jaypei/emacs-neotree/issues/149
+
+(defun neotree-project-root-dir-or-current-dir ()
+  "Open NeoTree using the project root, using projectile, or the
+current buffer directory."
+  (interactive)
+  (let ((project-dir (ignore-errors (projectile-project-root)))
+        (file-name (buffer-file-name))
+        (neo-smart-open t))
+    (if (neo-global--window-exists-p)
+        (neotree-hide)
+      (progn
+        (neotree-show)
+        (if project-dir
+            (neotree-dir project-dir))
+        (if file-name
+            (neotree-find file-name))))))
+
+
 (provide 'my-functions)
 
 ;;; my-functions.el ends here
