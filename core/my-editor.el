@@ -252,7 +252,7 @@
 (require 'which-key)
 (which-key-mode)
 (which-key-setup-side-window-bottom)
-(setq which-key-idle-delay 0.1)
+(setq which-key-idle-delay 1.0)
 (which-key-add-key-based-replacements
   "SPC j" "jump"
   "SPC f" "files"
