@@ -60,6 +60,7 @@
                       all-the-icons
                       key-chord
                       which-key
+                      restart-emacs
                       ;;; Themes
                       color-theme-sanityinc-tomorrow
                       leuven-theme

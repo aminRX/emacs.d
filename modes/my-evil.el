@@ -118,7 +118,8 @@
 
 ;; quit emacs.
 (evil-leader/set-key
-  "qq" 'confirm-exit-emacs)
+  "qq" 'confirm-exit-emacs
+  "qr" 'restart-emacs)
 
 (provide 'my-evil)
 
