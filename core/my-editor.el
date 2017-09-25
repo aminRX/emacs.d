@@ -261,7 +261,8 @@
   "SPC g" "git"
   "SPC q" "quit"
   "SPC h" "help"
-  "SPC s" "searching")
+  "SPC s" "searching"
+  "SPC t" "gui")
 
 ;; Magit configuration
 

@@ -62,6 +62,10 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 
+;; Gui toggles
+(evil-leader/set-key
+  "tr" 'linum-relative-toggle)
+
 ;; Navigation
 (evil-leader/set-key
   "jj" 'avy-goto-char
