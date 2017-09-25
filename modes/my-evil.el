@@ -86,7 +86,8 @@
   "bn" 'next-buffer
   "bp" 'previous-buffer
   "bm" 'kill-other-buffers
-  "br" 'revert-buffer)
+  "br" 'revert-buffer
+  "bs" 'go-to-scratch)
 
 (evil-leader/set-key
   "pf" 'helm-projectile

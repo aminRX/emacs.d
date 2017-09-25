@@ -22,6 +22,11 @@
   (if (y-or-n-p "Are you sure you want to erase the current buffer? ")
       (mapc 'kill-buffer (delq (current-buffer) (buffer-list)))))
 
+(defun go-to-scratch ()
+  "Go to scractch buffer"
+  (interactive)
+  (switch-to-buffer "*scratch*"))
+
 (defun my-upgrade-all ()
   "Upgrades all packages."
   (interactive)
