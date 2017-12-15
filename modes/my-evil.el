@@ -13,10 +13,8 @@
 (define-key evil-insert-state-map "\C-e" 'end-of-line)
 (define-key evil-visual-state-map "\C-e" 'evil-end-of-line)
 (define-key evil-motion-state-map "\C-e" 'evil-end-of-line)
-(define-key evil-normal-state-map "\C-f" 'evil-forward-char)
 (define-key evil-insert-state-map "\C-f" 'evil-forward-char)
 (define-key evil-visual-state-map "\C-f" 'evil-forward-char)
-(define-key evil-normal-state-map "\C-b" 'evil-backward-char)
 (define-key evil-insert-state-map "\C-b" 'evil-backward-char)
 (define-key evil-visual-state-map "\C-b" 'evil-backward-char)
 (define-key evil-normal-state-map "\C-d" 'evil-delete-char)
@@ -64,7 +62,8 @@
 
 ;; Gui toggles
 (evil-leader/set-key
-  "tr" 'linum-relative-toggle)
+  "tr" 'linum-relative-toggle
+  "tl" 'toggle-truncate-lines)
 
 ;; Navigation
 (evil-leader/set-key
