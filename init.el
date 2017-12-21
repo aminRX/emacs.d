@@ -79,6 +79,9 @@
 ;; Load UI after everything else.
 (require 'my-ui)
 
+ (load "~/.emacs.d/flow-for-emacs/flow")
+(setq web-mode-content-types-alist
+  '(("jsx" . "\\.js[x]?\\'")))
 ;;; init.el ends here
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

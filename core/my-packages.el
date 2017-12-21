@@ -68,7 +68,8 @@
                       monokai-theme
                       solarized-theme
                       zenburn-theme
-                      noctilux-theme)
+                      noctilux-theme
+                      flow-minor-mode)
   "A list of required packages to ensure they are installed at launch.")
 
 (defun require-package (package)

@@ -6,10 +6,12 @@
 (require-packages '(js2-mode tern company-tern))
 
 (require 'js2-mode)
-(autoload 'js2-mode "js" nil t)
-(add-to-list 'auto-mode-alist '("\\.js\\'"    . js2-mode))
+;; (autoload 'js2-mode "js" nil t)
+;; (add-to-list 'auto-mode-alist '("\\.js\\'"    . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.pac\\'"   . js2-mode))
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
+(add-hook 'js2-mode-hook 'flow-minor-enable-automatically)
+(add-hook 'js2-mode-hook 'flow-minor-mode)
 
 (setq-default js2-basic-offset 2)
 (setq-default js2-global-externs '("module" "require" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "process"))
