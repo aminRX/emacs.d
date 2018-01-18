@@ -19,6 +19,8 @@
     (define-key map (kbd "M-3") 'split-window-horizontally)
     (define-key map (kbd "M-0") 'delete-window)
     (define-key map (kbd "M-o") 'ace-window)
+    (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+    (setq aw-scope 'frame)
     (define-key map (kbd "M-k") 'kill-this-buffer)
     (define-key map (kbd "C-x C-m") 'smex)
 ;;    (define-key map (kbd "M-x") 'smex-major-mode-commands)

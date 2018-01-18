@@ -214,4 +214,5 @@
     (?b aw-split-window-horz " Ace - Split Horz Window")
     (?i delete-other-windows " Ace - Maximize Window")
     (?o delete-other-windows))
+(c-subword-mode 1)
 "List of actions for `aw-dispatch-default'.")

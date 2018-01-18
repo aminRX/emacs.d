@@ -17,11 +17,11 @@
 (diminish 'rainbow-mode)
 
 ;; Web mode
-(setq web-mode-markup-indent-offset 2)
-(setq web-mode-css-indent-offset 2)
-(setq web-mode-code-indent-offset 2)
-(setq js-indent-level 2)
-(setq css-indent-offset 2)
+(setq web-mode-markup-indent-offset 4)
+(setq web-mode-css-indent-offset 4)
+(setq web-mode-code-indent-offset 4)
+(setq js-indent-level 4)
+(setq css-indent-offset 4)
 
 ;; Coffeescript
 (custom-set-variables '(coffee-tab-width 2))
